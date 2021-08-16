@@ -5,7 +5,16 @@ let com_win = 0;
 let Round = 5;
 
 // start
-play();
+// play()
+greet();
+function greet(){
+    const greetDiv = document.getElementById("greet-div");
+    delay(3000);
+    
+}
+function delay(time){
+    setTimeout(function(){document.getElementById("greet-div").remove()}, time);
+}
 
 function computerPlay(){
     // computer's input, should be Rock || Paper || Scissor randomly

@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+
+#greet-div{
+    color: white;
+    width: 50%;
+    padding-top: 200px;
+    text-align: center;
+    margin: auto;
+}
+#greet{
+    color: black;
+    font-size: 10vmin;
+    font-family: Exo, monospace;
+    animation-name: fade;
+    animation-duration: 3s;
+}
+
+@keyframes fade{
+    0%{
+        color:white;
+    }
+    100%{
+        color: black;
+    }
+}
