@@ -10,12 +10,79 @@ body{
     margin: auto;
 }
 #greet{
-    color: black;
+    color: white;
     font-size: 10vmin;
     font-family: Exo, monospace;
     animation-name: fade;
     animation-duration: 3s;
 }
+#main-content{
+    margin-top: 10vmin;
+}
+#heading1{
+    text-align: center;
+    color:white;
+    font-family: Exo, cursive;
+    font-size: 50px;
+}
+#heading2{
+    text-align: center;
+    color:white;
+    font-family: Exo, cursive;
+    font-size: 30px;
+}
+#Yscore{
+    padding-left: 30vmin;
+    text-align: left;
+    color:white;
+    font-family: Exo, cursive;
+    font-size: 30px;
+}
+#Cscore{
+    padding-left: 30vmin;
+    text-align: left;
+    color:white;
+    font-family: Exo, cursive;
+    font-size: 30px;
+}
+#choice-div{
+    margin-top: 10vmin;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.choice-btn{
+    margin-left: 5vmin;
+    margin-right: 5vmin;
+    font-size: large;
+    font-size: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 50px;
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+}
+@media screen and (max-width: 720px){
+    #choice-div{
+        flex-direction: column;
+    }
+    .choice-btn{
+        margin-bottom: 10vmin;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #Yscore{
+        text-align: center;
+        padding-left: 0;
+    }
+    #Cscore{
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
 
 @keyframes fade{
     0%{
