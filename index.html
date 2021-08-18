@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="greet-div">
@@ -16,20 +17,21 @@
         <div id="main-content">
             <h1 id="heading1">Rock Paper Scissor</h1>
             <div id="scores-div">
-                <p id="scoreP"> <h1 id="Yscore">Human: 0</h1> </p>
-                <p id="scoreP"> <h1 id="Cscore">Computer: 0</h1> </p>
+                <p class="scoreP"> <h1 id="Yscore">Human: 0</h1> </p>
+                <p class="scoreP"> <h1 id="Cscore">Computer: 0</h1> </p>
             </div>
 
             <h2 id="heading2">So what will your choice be!</h2>
         </div>
 
         <div id="choice-div">
-            <button name="Rock" value="Rock" class="choice-btn"><i class="far fa-hand-rock"></i></button>
-            <button name="Paper" value="Paper" class="choice-btn"><i class="far fa-hand-paper"></i></button>
-            <button name="Scissor" value="Scissor" class="choice-btn"><i class="far fa-hand-scissors"></i></button>
+            <button name="Rock" value="Rock" class="choice-btn" onclick="getInput(this)"><i class="far fa-hand-rock"></i>  </button>
+            <button name="Paper" value="Paper" class="choice-btn" onclick="getInput(this)"><i class="far fa-hand-paper"></i></button>
+            <button name="Scissor" value="Scissor" class="choice-btn" onclick="getInput(this)"><i class="far fa-hand-scissors"></i></button>
         </div>
-
-
+        <div id="forStart">
+            <button name="start" id="start" onclick="play()">Start</button>
+        </div>
         <script src="script.js"></script>
     </body>
 </html>
