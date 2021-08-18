@@ -4,7 +4,7 @@ body{
 
 #greet-div{
     color: white;
-    width: 50%;
+    width: 100%;
     padding-top: 200px;
     text-align: center;
     margin: auto;
@@ -12,19 +12,29 @@ body{
 }
 #greet{
     color: white;
-    font-size: 10vmin;
-    font-family: Exo, monospace;
     animation-name: fade;
     animation-duration: 3s;
-}
-#main-content{
-    margin-top: 10vmin;
+    font-family: "Feroka One", cursive;
+    font-size: 15vmin;
+    letter-spacing: 0.2em;
+    -webkit-font-smoothing: antialiased;
+    background-image: url(ccimg.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #heading1{
     text-align: center;
     color:white;
-    font-family: Exo, cursive;
-    font-size: 50px;
+    font-family: "Feroka One", cursive;
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    -webkit-font-smoothing: antialiased;
+    background-image: url(ccimg.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #heading2{
     text-align: center;
@@ -135,6 +145,7 @@ i{
     }
     100%{
         color: black;
+        opacity: 0;
     }
 }
 

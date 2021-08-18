@@ -141,3 +141,7 @@ function playerWon(user_input, com_input){
     }
 }
 
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
